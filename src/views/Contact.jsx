@@ -89,7 +89,7 @@ const Contact = () => {
               </div>
               <div className="flex justify-between ">
                 <div className="underline">
-                  <a href="mailto:aakash.sh858791@gmail.com">
+                  <a href="mailto:harishkshetty7@gmail.com">
                     Send me email directly
                   </a>
                 </div>
@@ -112,22 +112,22 @@ const Contact = () => {
               href="hello"
               className="mb-12 mt-4 font-semibold text-blue-700 block uppercase"
             >
-              aakash.sh858791@gmail.com
+              harishkshetty7@gmail.com
             </a>
             <h1 className="text-3xl  font-bold">Address</h1>
             <a
               href="hello"
               className="mt-4  mb-12 md:text-right font-semibold text-blue-700 block uppercase"
             >
-              Jhilmil Colony, Delhi
+              Singapore
               <br />
-              India
             </a>
             <h1 className="text-3xl  font-bold">Social</h1>
             <ul className="flex">
               {contactLinks.map((el) => (
                 <a
                   href={el.link}
+                  target="_blank"
                   className="md:ml-6 md:mr-0 mr-6 cursor-pointer mt-4 hover:scale-125 flex flex-col justify-center items-center"
                 >
                   <img alt="" src={el.url} />
@@ -147,7 +147,7 @@ const Contact = () => {
       >
         Made with
         <div className="text-red-500 px-2 text-2xl">&#10084;</div>
-        by Aakash Sharma
+        by Harish K Shetty
       </div>
     </div>
   );

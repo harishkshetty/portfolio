@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const Card = () => {
+const Card = ({link,image,description}) => {
   return (
     <motion.div
       initial={"hidden"}
@@ -12,12 +12,24 @@ const Card = () => {
       }}
       class="max-w-xl bg-white rounded-lg border border-gray-200 shadow-lg dark:bg-gray-800 dark:border-gray-700 my-8"
     >
-      <a href="hello">
-        <img
-          class="rounded-t-lg w-full"
-          src="https://images.wallpaperscraft.com/image/single/system_scheme_blue_blueprint_10428_300x168.jpg"
-          alt=""
-        />
+      <a href={link}  target="_blank" className="text-center align-center">
+      <motion.img
+            initial="hidden"
+            whileInView={"visible"}
+            variants={{
+              visible: {
+                y: 0,
+                opacity: 1,
+                transition: {
+                  type: "spring",
+                },
+              },
+              hidden: { opacity: 1, y: 80 },
+            }}
+            src={require(`../assets/images/${image}`)}
+            alt=""
+            className="sm:block w-full"
+          />
       </a>
       <div class="p-5">
         <a href="helo">
@@ -26,14 +38,14 @@ const Card = () => {
           </h5>
         </a>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          Here are the biggest enterprise technology acquisitions of 2021 so
-          far, in reverse chronological order.
+          {description}
         </p>
         <a
-          href="hello"
+          href={link}
+          target="_blank"
           class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300"
         >
-          Read more
+          Go Live
           <svg
             class="ml-2 -mr-1 w-4 h-4"
             fill="currentColor"
