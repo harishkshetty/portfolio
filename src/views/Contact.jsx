@@ -94,7 +94,7 @@ const Contact = () => {
                   </a>
                 </div>
                 <button className="bg-indigo-500 text-white px-4 py-2 w-40 rounded-md hover:bg-indigo-400">
-                  <a href="mailto:aakash.sh858791@gmail.com">Submit</a>
+                  <a href="mailto:harishkshetty7@gmail.com">Submit</a>
                 </button>
               </div>
             </form>
