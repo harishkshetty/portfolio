@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const Card = ({link,image,description}) => {
+const Card = ({link,image,description,name}) => {
   return (
     <motion.div
       initial={"hidden"}
@@ -28,13 +28,13 @@ const Card = ({link,image,description}) => {
             }}
             src={require(`../assets/images/${image}`)}
             alt=""
-            className="sm:block w-full"
+            className="sm:block w-full mt-4"
           />
       </a>
       <div class="p-5">
         <a href="helo">
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Noteworthy technology acquisitions 2021
+            {name}
           </h5>
         </a>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">

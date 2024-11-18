@@ -56,9 +56,8 @@ export const projectData = [
 	{
 		id: 12,
 		name: 'Singpore 1st Digital telco',
-		description:
-			"The React and Material-UI-based website is a sophisticated platform featuring three dynamic landing pages dedicated to showcasing a state-of-the-art shopping app builder service. Integrating Material-UI's rich component library with React's robust architecture.",
-		image: 'circles-left-sg.png',
+		description:"This app focuses on delivering a seamless and personalized experience for managing mobile plans, data usage, and additional services, with a strong emphasis on flexibility and customer empowerment.",
+		image: 'circles-sg.png',
 		link: 'https://www.circles.life/sg/',
 		done: true,
 	},
@@ -67,28 +66,26 @@ export const projectData = [
 		name: 'Circles Australia',
 		description:
 			"The React and Material-UI-based website is a sophisticated platform featuring three dynamic landing pages dedicated to showcasing a state-of-the-art shopping app builder service. Integrating Material-UI's rich component library with React's robust architecture.",
-		image: 'circles-au.png',
+		image: 'cirleslife-au.png',
 		link: 'https://www.circles.life/au',
 		done: true,
 	},
 	{
 		id: 13,
-		name: 'Onic',
+		name: 'Onic-Pakistan',
 		description:
-			'The Dashboard is an innovative platform empowering users to design the interface of their shopping app. With controls and options, users can craft dynamic layouts for their brand. The dashboard ensures seamless synchronization between user edits and real-time previews.',
-		image: 'waiter-dashboard.png',
-		link: 'https://waiter-dashboard.vercel.app/appBuilder',
-		gitLink: 'https://github.com/HossamMahmoudkhedr/waiter-dashboard',
+			'Onic Pakistan (onic.pk) is a digital telecom brand under Ufone 4G and PTCL, launched to deliver a seamless and youth-focused mobile experience. The platform leverages innovative technologies to provide fully digital onboarding, pinless wallet payments, and auto-renewal features, all accessible through its web/mobile application.',
+		image: 'onic-pk.png',
+		link: 'https://onic.pk/',
 		done: true,
 	},
 	{
 		id: 11,
-		name: 'Wim.mx',
+		name: 'wim is as you want-Mexico',
 		description:
-			'Created an effective website for a company that specializes in providing scheduling services. The website consists of five pages that fully meet customer needs, are easy to access, and come with a responsive experience on all screens.',
-		image: 'jadwala.png',
-		link: 'https://hossammahmoudkhedr.github.io/jadwala/',
-		gitLink: 'https://github.com/HossamMahmoudkhedr/jadwala',
+			'Created an effective  web app specializes in providing focuses on providing eSIM solutions for travelers and international connectivity. It offers services for purchasing and activating digital SIM cards, enabling users to stay connected globally without needing physical SIMs. The platform emphasizes ease of use, affordability, and seamless setup for international data plans.',
+		image: 'circles-mexico.png',
+		link: 'https://www.somoswim.com/',
 		done: true,
 	},
 	
