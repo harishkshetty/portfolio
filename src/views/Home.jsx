@@ -1,10 +1,12 @@
 import React, { useContext } from "react";
 import heroBg from "../assets/webdev.svg";
 import Typical from "react-typical";
+import { Typewriter } from "react-simple-typewriter";
+
 import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
-import CV from '../assets/CV/HarishResume.pdf';
+import CV from "../assets/CV/HarishResume.pdf";
 
 import cloud from "../assets/cloudBg.png";
 import cloudDark from "../assets/cloudDark.png";
@@ -33,15 +35,20 @@ const Home = () => {
                 Hi, I am Harish
               </motion.span>
               <span className="block text-blue-500 z-0 lg:inline">
-                <Typical
+                {/* <Typical
                   steps={[
                     "Front End Developer",
                     1000,
                     "Full Stack Developer",
                     1000,
-                   
                   ]}
                   loop={Infinity}
+                /> */}
+                <Typewriter
+                  words={["Front End Developer", "Full Stack Developer"]}
+                  loop={true}
+                  cursor
+                  cursorStyle="_"
                 />
               </span>
             </h1>
@@ -60,6 +67,8 @@ const Home = () => {
                 <a
                   href={el.link}
                   target="_blank"
+                  rel="noreferrer"
+                  key={el.name}
                   className="mr-5 cursor-pointer mt-8 hover:scale-125"
                 >
                   <img alt="" src={el.url} />
@@ -70,17 +79,18 @@ const Home = () => {
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="mt-3 sm:mt-0 cursor-pointer w-1/2">
                 <motion.a
-						href={CV}
-						initial="hidden"
-						whileInView="visible"
-						viewport={{ once: true }}
-						download="Harish CV_Frontend"
-						target="_blank"
-            className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
-						rel="noreferrer"
-						style={{ width: 'fit-content' }}>
-              Resume 
-					</motion.a>
+                  href={CV}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  download="Harish CV_Frontend"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
+                  style={{ width: "fit-content" }}
+                >
+                  Resume
+                </motion.a>
               </div>
             </div>
           </div>

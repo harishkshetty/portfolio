@@ -57,9 +57,9 @@ const Navbar = () => {
               {`<ꫝꪖ𝘳𝓲𝘴𝘩 ƙ 𝘴𝓱𝓮𝓽𝓽ꪗ/>`}
             </a>
           </div>
-          <div class="hidden justify-between items-center w-full md:flex md:w-auto ">
+          <div className="hidden justify-between items-center w-full md:flex md:w-auto ">
             <ul
-              class={
+              className={
                 "flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium"
               }
             >
@@ -70,6 +70,7 @@ const Navbar = () => {
                     activeClass={"text-white bg-blue-500"}
                     spy={true}
                     smooth={true}
+                    key={el.name}
                     className={
                       darkMode
                         ? "block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md"
@@ -139,11 +140,12 @@ const Navbar = () => {
                 : "bg-black py-2 px-2 md:p-0 z-50 fixed top-16 mt-2 rounded-lg shadow-lg right-2 block w-40"
             }
           >
-            <ul class="md:hidden md:flex-row md:space-y-8 md:mt-0 md:text-md md:font-medium">
-              {links.map((el) => (
+            <ul className="md:hidden md:flex-row md:space-y-8 md:mt-0 md:text-md md:font-medium">
+              {links.map((el,index) => (
                 <Link
                   to={el.route}
                   activeClass={"text-white bg-blue-500"}
+                  key={`${el.route}-${index}`}
                   className={
                     darkMode
                       ? "hover:bg-blue-500 text-black block px-3 py-2 rounded-md text-base font-medium mt-1 hover:text-white"

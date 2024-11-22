@@ -62,6 +62,7 @@ const About = () => {
               <motion.div
                 initial="hidden"
                 whileInView={"visible"}
+                key={el.name}
                 variants={{
                   visible: {
                     y: 0,
