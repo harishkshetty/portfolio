@@ -6,7 +6,7 @@ import { Typewriter } from "react-simple-typewriter";
 import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
-import CV from "../assets/CV/HarishResume.pdf";
+import CV from "../assets/CV/harishkShetty.pdf";
 
 import cloud from "../assets/cloudBg.png";
 import cloudDark from "../assets/cloudDark.png";
