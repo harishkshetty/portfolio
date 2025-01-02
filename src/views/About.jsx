@@ -30,7 +30,7 @@ const About = () => {
                   : "mt-4 text-xl text-justify text-white"
               }
             >
-              I'm a Senior Frontend Engineer  over 9 years of experience with
+              I'm a Staff Frontend Engineer  over 9 years of experience with
               experience in designing new features from ideation to production,
               implementation of wireframes and design flows into high
               performance software applications. I take into consideration the
