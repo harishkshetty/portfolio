@@ -59,8 +59,7 @@ const Home = () => {
                   : "mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
               }
             >
-              I am a Front-End / Full-Stack Developer. I am currently working at
-              Circles.Life as a Staff Front-End Developer
+              I am a Front-End / Full-Stack Developer, currently working as a Staff Front-End Developer at Circles.Life.
             </p>
             <div className="flex md:justify-start ">
               {contactLinks.map((el) => (
